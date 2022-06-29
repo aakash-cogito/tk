@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bottom-4 {
+  bottom: 4px;
+}
+
+.font-size-8 {
+  font-size: 8px;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.font-size-32 {
+  font-size: 32px;
+}
+
+.hover-pointer:hover{
+  cursor: pointer;
+}
+
+.side-navbar {
+  position: absolute;
+  top: 34px;
+  transition: ease-in-out;
+  overflow: hidden;
+}
+.ul-hide-style {
+  list-style: none;
+  padding: 0;
+}
+.ul-hide-style a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.solid-bottom-border {
+  border-bottom: 2px solid black;
+}
+
+.border-around-mid {
+  border: 1px solid black;
+  border-radius: 5px;
 }
