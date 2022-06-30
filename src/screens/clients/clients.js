@@ -1,8 +1,14 @@
+import React from "react";
 import SearchIcon from "../../components/icons/SearchIcon";
+import MutateClientModel from "../../components/modals/MutateClientModel";
 import Table from "../../components/table/Table";
 import { clientsText } from "../../constants/StaticText/clients";
 
 const Clients = () => {
+  const [createModelStatus, setCreateModelStatus] = React.useState(false);
+  const handleAddLead = () => {
+    setCreateModelStatus((state) => !state);
+  };
   return (
     <>
       <div className="p-2">
@@ -33,7 +39,10 @@ const Clients = () => {
               </div>
             </div>
             <div className="d-flex align-items-center">
-              <button class="btn btn-light border">Add Lead</button>
+              <button class="btn btn-light border" onClick={handleAddLead}>
+                Add Lead
+              </button>
+              {createModelStatus && <MutateClientModel onClose={handleAddLead} />}
             </div>
           </div>
 

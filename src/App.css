@@ -43,6 +43,15 @@
 .bottom-4 {
   bottom: 4px;
 }
+.right-0 {
+  right: 0;
+}
+.top-5 {
+  top: 5px;
+}
+.top-25 {
+  top: 25px;
+}
 
 .font-size-8 {
   font-size: 8px;
@@ -53,9 +62,15 @@
 .font-size-32 {
   font-size: 32px;
 }
+.text-left{
+  text-align: start;
+}
 
 .hover-pointer:hover{
   cursor: pointer;
+}
+.hover-background:hover{
+  background-color: cornflowerblue;
 }
 
 .side-navbar {
@@ -80,4 +95,44 @@
 .border-around-mid {
   border: 1px solid black;
   border-radius: 5px;
+}
+
+
+.action-option {
+  transition: ease-in-out;
+  z-index: 2;
+}
+.action-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.client-model-parent{
+  top:0;
+  left:0;
+  height:100vh;
+  width: 100vw;
+  z-index: 2;
+}
+.client-model-back{
+  top:0;
+  left:0;
+  height:100vh;
+  width: 100vw;
+  z-index: 2;
+}
+.client-model{
+  width: 80vw;
+  max-width: 600px;
+  max-height: 100vh;
+  /* overflow-y: scroll; */
+  z-index: 3;
+  border-radius: 5px;
+}
+.modal-head{
+
 }
